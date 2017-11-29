@@ -1,0 +1,255 @@
+<html>
+<head>
+	<title>ipython</title>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <style type="text/css">
+        ul p {
+            font-style: italic;
+        }
+
+        ul li {
+            font-family: monospace;
+        }
+
+      </style>
+</head>
+<body>
+	<nav>
+	    <div class="nav-wrapper">
+	      <a href="/index.html" class="brand-logo">jFSTMerge - Rename Handler Changed</a>
+	    </div>
+	</nav>
+
+	<div class="container">
+	<h3 class="header">AndEngine</h3>
+
+    <h5>Summary</h5>
+    <p>
+        s3m was invoked in 4 rename scenario.
+    </p>
+    <p>
+        X False Positives.
+    </p>
+    <p>
+        Y False Negatives.
+    </p>
+    
+
+
+	<table class="striped">
+        <thead>
+          <tr>
+              <th>-</th>
+              <th>Conflict Type</th>
+              <th>Files</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>False positives added by unstructured merge (1)</td>
+            <td>Method body update</td>
+            <td>
+            	<ul>
+                    <p>
+                            Comment: conflict caused by inclusion of space in call of method. Since s3m ignores spaces, only unstructured merge has reported conflict.
+                        </p>
+            		<li>
+            			s3m result:
+            			<a href="https://s3mpython.firebaseapp.com/ipython/rev_4e0a41d_e9e859c/s3m-result/transformers.py">
+            				rev_4e0a41d_e9e859c/converters/transformers.py
+            			</a>            		
+            		</li>
+            		<br/>
+            		<li>
+            			unstructured result:<br/>
+            			<a href="https://s3mpython.firebaseapp.com/ipython/rev_4e0a41d_e9e859c/unstructured-result/transformers.py">
+            				rev_4e0a41d_e9e859c/converters/transformers.py
+            			</a>
+            		</li>
+                    <br>
+                    <li>
+                        BASE:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_4e0a41d_e9e859c/base/transformers.py">
+                            rev_4e0a41d_e9e859c/converters/transformers.py
+                        </a><br/>
+                        LEFT:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_4e0a41d_e9e859c/left/transformers.py">
+                            rev_4e0a41d_e9e859c/converters/transformers.py
+                        </a><br/>
+                        RIGHT:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_4e0a41d_e9e859c/right/transformers.py">
+                            rev_4e0a41d_e9e859c/converters/transformers.py
+                        </a>
+                    </li>
+            	</ul>
+            </td>
+          </tr>
+          <tr>
+            <td>False positives added by s3m (12)</td>
+            <td>method deletion</td>
+            <td>
+            	<ul>
+                    <p>
+                        Comment: conflicts reported possibly due to parser problems in handling with Python comments.
+                    </p>
+            		<li>
+            			[deletion] s3m result (11 conflicts):
+            			<a href="https://s3mpython.firebaseapp.com/ipython/rev_b6278b2_7a85cbc/test_db.py">
+            				rev_b6278b2_7a85cbc/IPython/parallel/tests/test_db.py
+            			</a>
+            		</li>
+                    <li>
+                        BASE:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_b6278b2_7a85cbc/base/test_db.py">
+                            rev_b6278b2_7a85cbc/IPython/parallel/tests/test_db.py
+                        </a><br>
+                        LEFT:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_b6278b2_7a85cbc/left/test_db.py">
+                            rev_b6278b2_7a85cbc/IPython/parallel/tests/test_db.py
+                        </a><br>
+                        RIGHT:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_b6278b2_7a85cbc/right/test_db.py">
+                            rev_b6278b2_7a85cbc/IPython/parallel/tests/test_db.py
+                        </a>
+                    </li>
+                    
+                    <hr>
+
+            		<li>
+            			[deletion] s3m result:
+            			<a href="https://s3mpython.firebaseapp.com/ipython/rev_6728002_d303545/csshtmlheader.py">
+            				rev_6728002_d303545/IPython/nbconvert/transformers/csshtmlheader.py
+            			</a>
+            		</li>
+                    <li>
+                        BASE:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_6728002_d303545/base/csshtmlheader.py">
+                            rev_6728002_d303545/IPython/nbconvert/transformers/csshtmlheader.py
+                        </a><br>
+                        LEFT:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_6728002_d303545/left/csshtmlheader.py">
+                            rev_6728002_d303545/IPython/nbconvert/transformers/csshtmlheader.py
+                        </a><br>
+                        RIGHT:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_6728002_d303545/right/csshtmlheader.py">
+                            rev_6728002_d303545/IPython/nbconvert/transformers/csshtmlheader.py
+                        </a>
+                    </li>
+
+            		<!--
+            		<li>
+            			[dictionary update] s3m result:
+            			<a href="https://s3mpython.firebaseapp.com/ipython/rev_1442128_8e0ecc1/export.py">
+            				rev_1442128_8e0ecc1/IPython/nbconvert/exporters/export.py
+            			</a>
+            		</li>
+
+            		<li>
+            			[dictionary update] s3m result:
+            			<a href="https://s3mpython.firebaseapp.com/ipython/rev_5008c25_00cebaf/latex.py">
+            				rev_5008c25_00cebafIPython/nbconvert/exporters/latex.py
+            			</a>
+            		</li>
+
+            		<li>
+            			[dictionary update] s3m result:
+            			<a href="https://s3mpython.firebaseapp.com/ipython/rev_dd3a81d_89b52e3/exporter.py">
+            				rev_dd3a81d_89b52e3/IPython/nbconvert/exporters/exporter.py
+            			</a>
+            		</li>
+
+            		<li>
+            			[dictionary update] s3m result:
+            			<a href="https://s3mpython.firebaseapp.com/ipython/rev_b743e16_6148c2f/exporter.py">
+            				rev_b743e16_6148c2f/IPython/nbconvert/exporters/exporter.py
+            			</a>
+            		</li>
+            		-->
+            	</ul>
+            </td>
+          </tr>
+          <tr>
+            <td>False negatives added by unstructured merge</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>False negatives added by s3m (2)</td>
+            <td>Method body update, variable declaration</td>
+            <td>
+            	<ul>
+                    <p>
+                        Comment: In both cases, s3m has considered only the commit made by left or right node of the three-way-merge.
+                    </p>
+
+            		<li>
+            			[method body] s3m result:
+            			<a href="https://s3mpython.firebaseapp.com/ipython/rev_d2129b7_998b964/s3m-result/latex.py">
+            				rev_d2129b7_998b964/converters/latex.py
+            			</a>            		
+            		</li>
+            		<br/>
+            		<li>
+            			[method body] unstructured result:<br/>
+            			<a href="https://s3mpython.firebaseapp.com/ipython/rev_d2129b7_998b964/unstructured-result/latex.py">
+            				rev_d2129b7_998b964/converters/latex.py
+            			</a>
+            		</li>
+                    <li>
+                        BASE:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_d2129b7_998b964/base/latex.py">
+                            rev_d2129b7_998b964/converters/latex.py
+                        </a><br>
+                        LEFT:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_d2129b7_998b964/left/latex.py">
+                            rev_d2129b7_998b964/converters/latex.py
+                        </a><br>
+                        RIGHT:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_d2129b7_998b964/right/latex.py">
+                            rev_d2129b7_998b964/converters/latex.py
+                        </a>
+                    </li>
+            		
+                    <hr>
+
+            		<li>
+            			[variable declaration] s3m result:
+            			<a href="https://s3mpython.firebaseapp.com/ipython/rev_5008c25_00cebaf/s3m-result/svg2pdf.py">
+            				rev_5008c25_00cebaf/IPython/nbconvert/transformers/svg2pdf.py
+            			</a>            		
+            		</li>
+            		<br/>
+            		<li>
+            			[variable declaration] unstructured result:<br/>
+            			<a href="https://s3mpython.firebaseapp.com/ipython/rev_5008c25_00cebaf/unstructured-result/svg2pdf.py">
+            				rev_5008c25_00cebaf/IPython/nbconvert/transformers/svg2pdf.py
+            			</a>
+            		</li>
+                    <li>
+                        BASE:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_5008c25_00cebaf/base/svg2pdf.py">
+                            rev_5008c25_00cebaf/IPython/nbconvert/transformers/svg2pdf.py
+                        </a><br>
+                        LEFT:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_5008c25_00cebaf/left/svg2pdf.py">
+                            rev_5008c25_00cebaf/IPython/nbconvert/transformers/svg2pdf.py
+                        </a><br>
+                        RIGHT:
+                        <a href="https://s3mpython.firebaseapp.com/ipython/rev_5008c25_00cebaf/right/svg2pdf.py">
+                            rev_5008c25_00cebaf/IPython/nbconvert/transformers/svg2pdf.py
+                        </a>
+                    </li>
+            	</ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+	</div>
+</body>
+</html>
