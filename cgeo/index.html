@@ -1,417 +1,543 @@
 <html>
-<head>
-	<title>cgeo</title>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+   <head>
+      <title>cgeo</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
       <style type="text/css">
-        ul p {
-            font-style: italic;
-        }
-
-        ul li {
-            font-family: monospace;
-        }
-
+         ul p {
+         font-style: italic;
+         }
+         ul li {
+         font-family: monospace;
+         }
       </style>
-</head>
-<body>
-	<nav>
-	    <div class="nav-wrapper">
-	      <a href="s3mHandlerRenameResults/index.html" class="brand-logo">jFSTMerge - Rename Handler Changed</a>
-	    </div>
-	</nav>
-
-	<div class="container">
-	<h3 class="header">cgeo</h3>
-
-    <h5>Summary</h5>
-    <p>
-        s3m was invoked in 4 rename scenario.
-    </p>
-    <p>
-        X False Positives.
-    </p>
-    <p>
-        Y False Negatives.
-    </p>
-    
-
-
-	<table class="striped">
-        <thead>
-          <tr>
-              <th>-</th>
-              <th>Conflict Type</th>
-              <th>Files</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>False positives added by unstructured merge (1)</td>
-            <td>Method body update</td>
-            <td>
-            	<ul>
-					<p>
-					   Cometario qualquer...
-					</p>
-					<li>
-					   s3m result: 
-					   <a href='./results/merge_file_16QiPm/merge_file_16QiPm-rename.merge.java'>
-					   ./results/merge_file_16QiPm/merge_file_16QiPm-rename.merge.java
-					   </a>
-					</li>
-					<br>
-					<li>
-					   BASE:
-					   <a href='./results/merge_file_16QiPm/merge_file_16QiPm-rename.base.java'>
-					   ./results/merge_file_16QiPm/merge_file_16QiPm-rename.base.java
-					   <a/><br/>
-					   LEFT:
-					   <a href='./results/merge_file_16QiPm/merge_file_84de1D-rename.left.java'>
-					   ./results/merge_file_16QiPm/merge_file_84de1D-rename.left.java
-					   <a/><br/>
-					   RIGHT:
-					   <a href='./results/merge_file_16QiPm/merge_file_MaSStI-rename.right.java'>
-					   ./results/merge_file_16QiPm/merge_file_MaSStI-rename.right.java
-					   <a/>
-					</li>
-					</br>
-					<p>
-					Cometario qualquer...
-					</p>
-					<li>
-					s3m result: 
-					<a href='./results/merge_file_4bfzp5/merge_file_4bfzp5-rename.merge.java'>
-					./results/merge_file_4bfzp5/merge_file_4bfzp5-rename.merge.java
-					</a>
-					</li>
-					<br>
-					<li>
-					   BASE:
-					   <a href='./results/merge_file_4bfzp5/merge_file_4bfzp5-rename.base.java'>
-					   ./results/merge_file_4bfzp5/merge_file_4bfzp5-rename.base.java
-					   <a/><br/>
-					   LEFT:
-					   <a href='./results/merge_file_4bfzp5/merge_file_CNiW2X-rename.left.java'>
-					   ./results/merge_file_4bfzp5/merge_file_CNiW2X-rename.left.java
-					   <a/><br/>
-					   RIGHT:
-					   <a href='./results/merge_file_4bfzp5/merge_file_4ZsMEy-rename.right.java'>
-					   ./results/merge_file_4bfzp5/merge_file_4ZsMEy-rename.right.java
-					   <a/>
-					</li>
-					</br>
-					<p>
-					Cometario qualquer...
-					</p>
-					<li>
-					s3m result: 
-					<a href='./results/merge_file_bz8unl/merge_file_bz8unl-rename.merge.java'>
-					./results/merge_file_bz8unl/merge_file_bz8unl-rename.merge.java
-					</a>
-					</li>
-					<br>
-					<li>
-					   BASE:
-					   <a href='./results/merge_file_bz8unl/merge_file_bz8unl-rename.base.java'>
-					   ./results/merge_file_bz8unl/merge_file_bz8unl-rename.base.java
-					   <a/><br/>
-					   LEFT:
-					   <a href='./results/merge_file_bz8unl/merge_file_aOGw5n-rename.left.java'>
-					   ./results/merge_file_bz8unl/merge_file_aOGw5n-rename.left.java
-					   <a/><br/>
-					   RIGHT:
-					   <a href='./results/merge_file_bz8unl/merge_file_Lakh7m-rename.right.java'>
-					   ./results/merge_file_bz8unl/merge_file_Lakh7m-rename.right.java
-					   <a/>
-					</li>
-					</br>
-					<p>
-					Cometario qualquer...
-					</p>
-					<li>
-					s3m result: 
-					<a href='./results/merge_file_dIAoXD/merge_file_dIAoXD-rename.merge.java'>
-					./results/merge_file_dIAoXD/merge_file_dIAoXD-rename.merge.java
-					</a>
-					</li>
-					<br>
-					<li>
-					   BASE:
-					   <a href='./results/merge_file_dIAoXD/merge_file_dIAoXD-rename.base.java'>
-					   ./results/merge_file_dIAoXD/merge_file_dIAoXD-rename.base.java
-					   <a/><br/>
-					   LEFT:
-					   <a href='./results/merge_file_dIAoXD/merge_file_l3oStx-rename.left.java'>
-					   ./results/merge_file_dIAoXD/merge_file_l3oStx-rename.left.java
-					   <a/><br/>
-					   RIGHT:
-					   <a href='./results/merge_file_dIAoXD/merge_file_xi4L0D-rename.right.java'>
-					   ./results/merge_file_dIAoXD/merge_file_xi4L0D-rename.right.java
-					   <a/>
-					</li>
-					</br>
-					<p>
-					Cometario qualquer...
-					</p>
-					<li>
-					s3m result: 
-					<a href='./results/merge_file_dKeaA5/merge_file_dKeaA5-rename.merge.java'>
-					./results/merge_file_dKeaA5/merge_file_dKeaA5-rename.merge.java
-					</a>
-					</li>
-					<br>
-					<li>
-					   BASE:
-					   <a href='./results/merge_file_dKeaA5/merge_file_dKeaA5-rename.base.java'>
-					   ./results/merge_file_dKeaA5/merge_file_dKeaA5-rename.base.java
-					   <a/><br/>
-					   LEFT:
-					   <a href='./results/merge_file_dKeaA5/merge_file_5eyDKr-rename.left.java'>
-					   ./results/merge_file_dKeaA5/merge_file_5eyDKr-rename.left.java
-					   <a/><br/>
-					   RIGHT:
-					   <a href='./results/merge_file_dKeaA5/merge_file_azWd8s-rename.right.java'>
-					   ./results/merge_file_dKeaA5/merge_file_azWd8s-rename.right.java
-					   <a/>
-					</li>
-					</br>
-					<p>
-					Cometario qualquer...
-					</p>
-					<li>
-					s3m result: 
-					<a href='./results/merge_file_H1lqvB/merge_file_H1lqvB-rename.merge.java'>
-					./results/merge_file_H1lqvB/merge_file_H1lqvB-rename.merge.java
-					</a>
-					</li>
-					<br>
-					<li>
-					   BASE:
-					   <a href='./results/merge_file_H1lqvB/merge_file_H1lqvB-rename.base.java'>
-					   ./results/merge_file_H1lqvB/merge_file_H1lqvB-rename.base.java
-					   <a/><br/>
-					   LEFT:
-					   <a href='./results/merge_file_H1lqvB/merge_file_nhQVfD-rename.left.java'>
-					   ./results/merge_file_H1lqvB/merge_file_nhQVfD-rename.left.java
-					   <a/><br/>
-					   RIGHT:
-					   <a href='./results/merge_file_H1lqvB/merge_file_y3A6yn-rename.right.java'>
-					   ./results/merge_file_H1lqvB/merge_file_y3A6yn-rename.right.java
-					   <a/>
-					</li>
-					</br>
-					<p>
-					Cometario qualquer...
-					</p>
-					<li>
-					s3m result: 
-					<a href='./results/merge_file_H3LfZg/merge_file_H3LfZg-rename.merge.java'>
-					./results/merge_file_H3LfZg/merge_file_H3LfZg-rename.merge.java
-					</a>
-					</li>
-					<br>
-					<li>
-					   BASE:
-					   <a href='./results/merge_file_H3LfZg/merge_file_H3LfZg-rename.base.java'>
-					   ./results/merge_file_H3LfZg/merge_file_H3LfZg-rename.base.java
-					   <a/><br/>
-					   LEFT:
-					   <a href='./results/merge_file_H3LfZg/merge_file_b51S3P-rename.left.java'>
-					   ./results/merge_file_H3LfZg/merge_file_b51S3P-rename.left.java
-					   <a/><br/>
-					   RIGHT:
-					   <a href='./results/merge_file_H3LfZg/merge_file_cQ96Ay-rename.right.java'>
-					   ./results/merge_file_H3LfZg/merge_file_cQ96Ay-rename.right.java
-					   <a/>
-					</li>
-					</br>
-					<p>
-					Cometario qualquer...
-					</p>
-					<li>
-					s3m result: 
-					<a href='./results/merge_file_J7lMbG/merge_file_J7lMbG-rename.merge.java'>
-					./results/merge_file_J7lMbG/merge_file_J7lMbG-rename.merge.java
-					</a>
-					</li>
-					<br>
-					<li>
-					   BASE:
-					   <a href='./results/merge_file_J7lMbG/merge_file_J7lMbG-rename.base.java'>
-					   ./results/merge_file_J7lMbG/merge_file_J7lMbG-rename.base.java
-					   <a/><br/>
-					   LEFT:
-					   <a href='./results/merge_file_J7lMbG/merge_file_OY120g-rename.left.java'>
-					   ./results/merge_file_J7lMbG/merge_file_OY120g-rename.left.java
-					   <a/><br/>
-					   RIGHT:
-					   <a href='./results/merge_file_J7lMbG/merge_file_tlUwM8-rename.right.java'>
-					   ./results/merge_file_J7lMbG/merge_file_tlUwM8-rename.right.java
-					   <a/>
-					</li>
-					</br>
-					<p>
-					Cometario qualquer...
-					</p>
-					<li>
-					s3m result: 
-					<a href='./results/merge_file_PGhkBi/merge_file_PGhkBi-rename.merge.java'>
-					./results/merge_file_PGhkBi/merge_file_PGhkBi-rename.merge.java
-					</a>
-					</li>
-					<br>
-					<li>
-					   BASE:
-					   <a href='./results/merge_file_PGhkBi/merge_file_PGhkBi-rename.base.java'>
-					   ./results/merge_file_PGhkBi/merge_file_PGhkBi-rename.base.java
-					   <a/><br/>
-					   LEFT:
-					   <a href='./results/merge_file_PGhkBi/merge_file_WNGMkS-rename.left.java'>
-					   ./results/merge_file_PGhkBi/merge_file_WNGMkS-rename.left.java
-					   <a/><br/>
-					   RIGHT:
-					   <a href='./results/merge_file_PGhkBi/merge_file_Ltxnfa-rename.right.java'>
-					   ./results/merge_file_PGhkBi/merge_file_Ltxnfa-rename.right.java
-					   <a/>
-					</li>
-					</br>
-					<p>
-					Cometario qualquer...
-					</p>
-					<li>
-					s3m result: 
-					<a href='./results/merge_file_S46X4o/merge_file_S46X4o-rename.merge.java'>
-					./results/merge_file_S46X4o/merge_file_S46X4o-rename.merge.java
-					</a>
-					</li>
-					<br>
-					<li>
-					   BASE:
-					   <a href='./results/merge_file_S46X4o/merge_file_S46X4o-rename.base.java'>
-					   ./results/merge_file_S46X4o/merge_file_S46X4o-rename.base.java
-					   <a/><br/>
-					   LEFT:
-					   <a href='./results/merge_file_S46X4o/merge_file_2ZhmGU-rename.left.java'>
-					   ./results/merge_file_S46X4o/merge_file_2ZhmGU-rename.left.java
-					   <a/><br/>
-					   RIGHT:
-					   <a href='./results/merge_file_S46X4o/merge_file_kyzene-rename.right.java'>
-					   ./results/merge_file_S46X4o/merge_file_kyzene-rename.right.java
-					   <a/>
-					</li>
-					</br>
-					<p>
-					Cometario qualquer...
-					</p>
-					<li>
-					s3m result: 
-					<a href='./results/merge_file_w2T3Lo/merge_file_w2T3Lo-rename.merge.java'>
-					./results/merge_file_w2T3Lo/merge_file_w2T3Lo-rename.merge.java
-					</a>
-					</li>
-					<br>
-					<li>
-					   BASE:
-					   <a href='./results/merge_file_w2T3Lo/merge_file_w2T3Lo-rename.base.java'>
-					   ./results/merge_file_w2T3Lo/merge_file_w2T3Lo-rename.base.java
-					   <a/><br/>
-					   LEFT:
-					   <a href='./results/merge_file_w2T3Lo/merge_file_FN4zP7-rename.left.java'>
-					   ./results/merge_file_w2T3Lo/merge_file_FN4zP7-rename.left.java
-					   <a/><br/>
-					   RIGHT:
-					   <a href='./results/merge_file_w2T3Lo/merge_file_Yr5DUK-rename.right.java'>
-					   ./results/merge_file_w2T3Lo/merge_file_Yr5DUK-rename.right.java
-					   <a/>
-					</li>
-					</br>
-					<p>
-					Cometario qualquer...
-					</p>
-					<li>
-					s3m result: 
-					<a href='./results/merge_file_W4kZQa/merge_file_W4kZQa-rename.merge.java'>
-					./results/merge_file_W4kZQa/merge_file_W4kZQa-rename.merge.java
-					</a>
-					</li>
-					<br>
-					<li>
-					   BASE:
-					   <a href='./results/merge_file_W4kZQa/merge_file_W4kZQa-rename.base.java'>
-					   ./results/merge_file_W4kZQa/merge_file_W4kZQa-rename.base.java
-					   <a/><br/>
-					   LEFT:
-					   <a href='./results/merge_file_W4kZQa/merge_file_7hTjHb-rename.left.java'>
-					   ./results/merge_file_W4kZQa/merge_file_7hTjHb-rename.left.java
-					   <a/><br/>
-					   RIGHT:
-					   <a href='./results/merge_file_W4kZQa/merge_file_EPQZkr-rename.right.java'>
-					   ./results/merge_file_W4kZQa/merge_file_EPQZkr-rename.right.java
-					   <a/>
-					</li>
-					</br>
-					<p>
-					Cometario qualquer...
-					</p>
-					<li>
-					s3m result: 
-					<a href='./results/merge_file_WdRNSK/merge_file_WdRNSK-rename.merge.java'>
-					./results/merge_file_WdRNSK/merge_file_WdRNSK-rename.merge.java
-					</a>
-					</li>
-					<br>
-					<li>
-					   BASE:
-					   <a href='./results/merge_file_WdRNSK/merge_file_WdRNSK-rename.base.java'>
-					   ./results/merge_file_WdRNSK/merge_file_WdRNSK-rename.base.java
-					   <a/><br/>
-					   LEFT:
-					   <a href='./results/merge_file_WdRNSK/merge_file_MFqIYO-rename.left.java'>
-					   ./results/merge_file_WdRNSK/merge_file_MFqIYO-rename.left.java
-					   <a/><br/>
-					   RIGHT:
-					   <a href='./results/merge_file_WdRNSK/merge_file_YrjnGt-rename.right.java'>
-					   ./results/merge_file_WdRNSK/merge_file_YrjnGt-rename.right.java
-					   <a/>
-					</li>
-					</br>
-					<p>
-					Cometario qualquer...
-					</p>
-					<li>
-					s3m result: 
-					<a href='./results/merge_file_znAsPd/merge_file_znAsPd-rename.merge.java'>
-					./results/merge_file_znAsPd/merge_file_znAsPd-rename.merge.java
-					</a>
-					</li>
-					<br>
-					<li>
-					   BASE:
-					   <a href='./results/merge_file_znAsPd/merge_file_znAsPd-rename.base.java'>
-					   ./results/merge_file_znAsPd/merge_file_znAsPd-rename.base.java
-					   <a/><br/>
-					   LEFT:
-					   <a href='./results/merge_file_znAsPd/merge_file_pwsXYJ-rename.left.java'>
-					   ./results/merge_file_znAsPd/merge_file_pwsXYJ-rename.left.java
-					   <a/><br/>
-					   RIGHT:
-					   <a href='./results/merge_file_znAsPd/merge_file_m0gIe2-rename.right.java'>
-					   ./results/merge_file_znAsPd/merge_file_m0gIe2-rename.right.java
-					   <a/>
-					</li>
-					</br>
-            	</ul>
-            </td>
-          </tr>
-          
-        </tbody>
-      </table>
-	</div>
-</body>
+   </head>
+   <body>
+      <nav>
+         <div class="nav-wrapper">
+            <a href="s3mHandlerRenameResults/index.html" class="brand-logo">jFSTMerge - Rename Handler Changed</a>
+         </div>
+      </nav>
+      <div class="container">
+         <h3 class="header">cgeo</h3>
+         <h5>Summary</h5>
+         <p>
+            jFSTMerge was invoked in X rename scenario.
+         </p>
+         <p>
+            X False Positives.
+         </p>
+         <p>
+            Y False Negatives.
+         </p>
+         <table class="striped">
+            <thead>
+               <tr>
+                  <th>-</th>
+                  <th>Merge Resolution</th>
+                  <th>Files</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>False Positive</td>
+                  <td>Maintain both methods</td>
+                  <td>
+                     <ul>
+                        <p>
+                           Left changed method body.
+                           Right renamed method and changed body.
+                        </p>
+                        <li>
+                           s3m result: 
+                           <a href='./results/merge_file_16QiPm/merge_file_16QiPm-rename.merge.java'>
+                           ./results/merge_file_16QiPm/merge_file_16QiPm-rename.merge.java
+                           </a>
+                        </li>
+                        <br>
+                        <li>
+                           BASE:
+                           <a href='./results/merge_file_16QiPm/merge_file_16QiPm-rename.base.java'>
+                           ./results/merge_file_16QiPm/merge_file_16QiPm-rename.base.java
+                           <a/><br/>
+                           LEFT:
+                           <a href='./results/merge_file_16QiPm/merge_file_84de1D-rename.left.java'>
+                           ./results/merge_file_16QiPm/merge_file_84de1D-rename.left.java
+                           <a/><br/>
+                           RIGHT:
+                           <a href='./results/merge_file_16QiPm/merge_file_MaSStI-rename.right.java'>
+                           ./results/merge_file_16QiPm/merge_file_MaSStI-rename.right.java
+                           <a/>
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+               <td>False Positive</td>
+               <td>Maintain both methods</td>
+               <td>
+               <ul>
+               <p>
+               Left changed method body.
+               Right renamed method by the parameter.
+               </p>
+               <li>
+               s3m result: 
+               <a href='./results/merge_file_4bfzp5/merge_file_4bfzp5-rename.merge.java'>
+               ./results/merge_file_4bfzp5/merge_file_4bfzp5-rename.merge.java
+               </a>
+               </li>
+               <br>
+               <li>
+               BASE:
+               <a href='./results/merge_file_4bfzp5/merge_file_4bfzp5-rename.base.java'>
+               ./results/merge_file_4bfzp5/merge_file_4bfzp5-rename.base.java
+               <a/><br/>
+               LEFT:
+               <a href='./results/merge_file_4bfzp5/merge_file_CNiW2X-rename.left.java'>
+               ./results/merge_file_4bfzp5/merge_file_CNiW2X-rename.left.java
+               <a/><br/>
+               RIGHT:
+               <a href='./results/merge_file_4bfzp5/merge_file_4ZsMEy-rename.right.java'>
+               ./results/merge_file_4bfzp5/merge_file_4ZsMEy-rename.right.java
+               <a/>
+               </li>
+               </ul>
+               </td>
+               </tr>
+               <tr>
+               <td>False Positive</td>
+               <td>Method conclict</td>
+               <td>
+               <ul>
+               <p>
+               Left renamed method and changed body.
+               Right renamed method and changed body.
+               </p>
+               <li>
+               s3m result: 
+               <a href='./results/merge_file_bz8unl/merge_file_bz8unl-rename.merge.java'>
+               ./results/merge_file_bz8unl/merge_file_bz8unl-rename.merge.java
+               </a>
+               </li>
+               <br>
+               <li>
+               BASE:
+               <a href='./results/merge_file_bz8unl/merge_file_bz8unl-rename.base.java'>
+               ./results/merge_file_bz8unl/merge_file_bz8unl-rename.base.java
+               <a/><br/>
+               LEFT:
+               <a href='./results/merge_file_bz8unl/merge_file_aOGw5n-rename.left.java'>
+               ./results/merge_file_bz8unl/merge_file_aOGw5n-rename.left.java
+               <a/><br/>
+               RIGHT:
+               <a href='./results/merge_file_bz8unl/merge_file_Lakh7m-rename.right.java'>
+               ./results/merge_file_bz8unl/merge_file_Lakh7m-rename.right.java
+               <a/>
+               </li>
+               </ul>
+               </td>
+               </tr>
+               <tr>
+               <td>False Positive</td>
+               <td>Maintain both methods</td>
+               <td>
+               <ul>
+               <p>
+               Left renamed method and changed body
+               Right changed method body
+               </p>
+               <li>
+               s3m result: 
+               <a href='./results/merge_file_dIAoXD/merge_file_dIAoXD-rename.merge.java'>
+               ./results/merge_file_dIAoXD/merge_file_dIAoXD-rename.merge.java
+               </a>
+               </li>
+               <br>
+               <li>
+               BASE:
+               <a href='./results/merge_file_dIAoXD/merge_file_dIAoXD-rename.base.java'>
+               ./results/merge_file_dIAoXD/merge_file_dIAoXD-rename.base.java
+               <a/><br/>
+               LEFT:
+               <a href='./results/merge_file_dIAoXD/merge_file_l3oStx-rename.left.java'>
+               ./results/merge_file_dIAoXD/merge_file_l3oStx-rename.left.java
+               <a/><br/>
+               RIGHT:
+               <a href='./results/merge_file_dIAoXD/merge_file_xi4L0D-rename.right.java'>
+               ./results/merge_file_dIAoXD/merge_file_xi4L0D-rename.right.java
+               <a/>
+               </li>
+               </ul>
+               </td>
+               </tr>
+               <tr>
+               <td>False Positive</td>
+               <td>Maintain both methods</td>
+               <td>
+               <ul>
+               <p>
+               Left renamed method and changed body
+               Right changed method body
+               </p>
+               <li>
+               s3m result: 
+               <a href='./results/merge_file_dIAoXD/merge_file_dIAoXD-rename.merge.java'>
+               ./results/merge_file_dIAoXD/merge_file_dIAoXD-rename.merge.java
+               </a>
+               </li>
+               <br>
+               <li>
+               BASE:
+               <a href='./results/merge_file_dIAoXD/merge_file_dIAoXD-rename.base.java'>
+               ./results/merge_file_dIAoXD/merge_file_dIAoXD-rename.base.java
+               <a/><br/>
+               LEFT:
+               <a href='./results/merge_file_dIAoXD/merge_file_l3oStx-rename.left.java'>
+               ./results/merge_file_dIAoXD/merge_file_l3oStx-rename.left.java
+               <a/><br/>
+               RIGHT:
+               <a href='./results/merge_file_dIAoXD/merge_file_xi4L0D-rename.right.java'>
+               ./results/merge_file_dIAoXD/merge_file_xi4L0D-rename.right.java
+               <a/>
+               </li>
+               </ul>
+               </td>
+               </tr>
+               <tr>
+               <td>False Positive</td>
+               <td>Maintain both methods</td>
+               <td>
+               <ul>
+               <p>
+               Left renamed method and changed body
+               Right changed method body
+               </p>
+               <li>
+               s3m result: 
+               <a href='./results/merge_file_dKeaA5/merge_file_dKeaA5-rename.merge.java'>
+               ./results/merge_file_dKeaA5/merge_file_dKeaA5-rename.merge.java
+               </a>
+               </li>
+               <br>
+               <li>
+               BASE:
+               <a href='./results/merge_file_dKeaA5/merge_file_dKeaA5-rename.base.java'>
+               ./results/merge_file_dKeaA5/merge_file_dKeaA5-rename.base.java
+               <a/><br/>
+               LEFT:
+               <a href='./results/merge_file_dKeaA5/merge_file_5eyDKr-rename.left.java'>
+               ./results/merge_file_dKeaA5/merge_file_5eyDKr-rename.left.java
+               <a/><br/>
+               RIGHT:
+               <a href='./results/merge_file_dKeaA5/merge_file_azWd8s-rename.right.java'>
+               ./results/merge_file_dKeaA5/merge_file_azWd8s-rename.right.java
+               <a/>
+               </li>
+               </ul>
+               </td>
+               </tr>
+               <tr>
+               <td>False Positive</td>
+               <td>Maintain both methods</td>
+               <td>
+               <ul>
+               <p>
+               Left renamed method and changed body
+               Right changed method body
+               </p>
+               <li>
+               s3m result: 
+               <a href='./results/merge_file_H1lqvB/merge_file_H1lqvB-rename.merge.java'>
+               ./results/merge_file_H1lqvB/merge_file_H1lqvB-rename.merge.java
+               </a>
+               </li>
+               <br>
+               <li>
+               BASE:
+               <a href='./results/merge_file_H1lqvB/merge_file_H1lqvB-rename.base.java'>
+               ./results/merge_file_H1lqvB/merge_file_H1lqvB-rename.base.java
+               <a/><br/>
+               LEFT:
+               <a href='./results/merge_file_H1lqvB/merge_file_nhQVfD-rename.left.java'>
+               ./results/merge_file_H1lqvB/merge_file_nhQVfD-rename.left.java
+               <a/><br/>
+               RIGHT:
+               <a href='./results/merge_file_H1lqvB/merge_file_y3A6yn-rename.right.java'>
+               ./results/merge_file_H1lqvB/merge_file_y3A6yn-rename.right.java
+               <a/>
+               </li>		
+               </ul>
+               </td>
+               </tr>
+               <tr>
+               <td>False Positive</td>
+               <td>Method conclict</td>
+               <td>
+               <ul>
+               <p>
+               Left renamed method and changed body.
+               Right renamed method and changed body.
+               </p>
+               <li>
+               s3m result: 
+               <a href='./results/merge_file_H3LfZg/merge_file_H3LfZg-rename.merge.java'>
+               ./results/merge_file_H3LfZg/merge_file_H3LfZg-rename.merge.java
+               </a>
+               </li>
+               <br>
+               <li>
+               BASE:
+               <a href='./results/merge_file_H3LfZg/merge_file_H3LfZg-rename.base.java'>
+               ./results/merge_file_H3LfZg/merge_file_H3LfZg-rename.base.java
+               <a/><br/>
+               LEFT:
+               <a href='./results/merge_file_H3LfZg/merge_file_b51S3P-rename.left.java'>
+               ./results/merge_file_H3LfZg/merge_file_b51S3P-rename.left.java
+               <a/><br/>
+               RIGHT:
+               <a href='./results/merge_file_H3LfZg/merge_file_cQ96Ay-rename.right.java'>
+               ./results/merge_file_H3LfZg/merge_file_cQ96Ay-rename.right.java
+               <a/>
+               </li>
+               </ul>
+               </td>
+               </tr>
+               <tr>
+               <td>False Positive</td>
+               <td>Keep right changed method</td>
+               <td>
+               <ul>
+               <p>
+               Left deleted method.
+               Right changed method body.
+               </p>
+               <li>
+               s3m result: 
+               <a href='./results/merge_file_J7lMbG/merge_file_J7lMbG-rename.merge.java'>
+               ./results/merge_file_J7lMbG/merge_file_J7lMbG-rename.merge.java
+               </a>
+               </li>
+               <br>
+               <li>
+               BASE:
+               <a href='./results/merge_file_J7lMbG/merge_file_J7lMbG-rename.base.java'>
+               ./results/merge_file_J7lMbG/merge_file_J7lMbG-rename.base.java
+               <a/><br/>
+               LEFT:
+               <a href='./results/merge_file_J7lMbG/merge_file_OY120g-rename.left.java'>
+               ./results/merge_file_J7lMbG/merge_file_OY120g-rename.left.java
+               <a/><br/>
+               RIGHT:
+               <a href='./results/merge_file_J7lMbG/merge_file_tlUwM8-rename.right.java'>
+               ./results/merge_file_J7lMbG/merge_file_tlUwM8-rename.right.java
+               <a/>
+               </li>
+               </ul>
+               </td>
+               </tr>
+               <tr>
+               <td>False Positive</td>
+               <td>Keep right changed method</td>
+               <td>
+               <ul>
+               <p>
+               Left deleted method.
+               Right changed method body.
+               </p>
+               <li>
+               s3m result: 
+               <a href='./results/merge_file_PGhkBi/merge_file_PGhkBi-rename.merge.java'>
+               ./results/merge_file_PGhkBi/merge_file_PGhkBi-rename.merge.java
+               </a>
+               </li>
+               <br>
+               <li>
+               BASE:
+               <a href='./results/merge_file_PGhkBi/merge_file_PGhkBi-rename.base.java'>
+               ./results/merge_file_PGhkBi/merge_file_PGhkBi-rename.base.java
+               <a/><br/>
+               LEFT:
+               <a href='./results/merge_file_PGhkBi/merge_file_WNGMkS-rename.left.java'>
+               ./results/merge_file_PGhkBi/merge_file_WNGMkS-rename.left.java
+               <a/><br/>
+               RIGHT:
+               <a href='./results/merge_file_PGhkBi/merge_file_Ltxnfa-rename.right.java'>
+               ./results/merge_file_PGhkBi/merge_file_Ltxnfa-rename.right.java
+               <a/>
+               </li>
+               </ul>
+               </td>
+               </tr>
+               <tr>
+               <td>False Positive</td>
+               <td>Method conflict</td>
+               <td>
+               <ul>
+               <p>
+               Left changed method body.
+               Right renamed and changed method.
+               </p>
+               <li>
+               s3m result: 
+               <a href='./results/merge_file_S46X4o/merge_file_S46X4o-rename.merge.java'>
+               ./results/merge_file_S46X4o/merge_file_S46X4o-rename.merge.java
+               </a>
+               </li>
+               <br>
+               <li>
+               BASE:
+               <a href='./results/merge_file_S46X4o/merge_file_S46X4o-rename.base.java'>
+               ./results/merge_file_S46X4o/merge_file_S46X4o-rename.base.java
+               <a/><br/>
+               LEFT:
+               <a href='./results/merge_file_S46X4o/merge_file_2ZhmGU-rename.left.java'>
+               ./results/merge_file_S46X4o/merge_file_2ZhmGU-rename.left.java
+               <a/><br/>
+               RIGHT:
+               <a href='./results/merge_file_S46X4o/merge_file_kyzene-rename.right.java'>
+               ./results/merge_file_S46X4o/merge_file_kyzene-rename.right.java
+               <a/>
+               </li>
+               </ul>
+               </td>
+               </tr>
+               <tr>
+               <td>False Positive</td>
+               <td>Maintain both methods</td>
+               <td>
+               <ul>
+               <p>
+               Left renamed method and changed body
+               Right changed method body
+               </p>
+               <li>
+               s3m result: 
+               <a href='./results/merge_file_w2T3Lo/merge_file_w2T3Lo-rename.merge.java'>
+               ./results/merge_file_w2T3Lo/merge_file_w2T3Lo-rename.merge.java
+               </a>
+               </li>
+               <br>
+               <li>
+               BASE:
+               <a href='./results/merge_file_w2T3Lo/merge_file_w2T3Lo-rename.base.java'>
+               ./results/merge_file_w2T3Lo/merge_file_w2T3Lo-rename.base.java
+               <a/><br/>
+               LEFT:
+               <a href='./results/merge_file_w2T3Lo/merge_file_FN4zP7-rename.left.java'>
+               ./results/merge_file_w2T3Lo/merge_file_FN4zP7-rename.left.java
+               <a/><br/>
+               RIGHT:
+               <a href='./results/merge_file_w2T3Lo/merge_file_Yr5DUK-rename.right.java'>
+               ./results/merge_file_w2T3Lo/merge_file_Yr5DUK-rename.right.java
+               <a/>
+               </li>
+               </ul>
+               </td>
+               </tr>
+               <tr>
+               <td>False Positive</td>
+               <td>Maintain both methods</td>
+               <td>
+               <ul>
+               <p>
+               Left changed method body
+               Right renamed method and changed body
+               </p>
+               <li>
+               s3m result: 
+               <a href='./results/merge_file_W4kZQa/merge_file_W4kZQa-rename.merge.java'>
+               ./results/merge_file_W4kZQa/merge_file_W4kZQa-rename.merge.java
+               </a>
+               </li>
+               <br>
+               <li>
+               BASE:
+               <a href='./results/merge_file_W4kZQa/merge_file_W4kZQa-rename.base.java'>
+               ./results/merge_file_W4kZQa/merge_file_W4kZQa-rename.base.java
+               <a/><br/>
+               LEFT:
+               <a href='./results/merge_file_W4kZQa/merge_file_7hTjHb-rename.left.java'>
+               ./results/merge_file_W4kZQa/merge_file_7hTjHb-rename.left.java
+               <a/><br/>
+               RIGHT:
+               <a href='./results/merge_file_W4kZQa/merge_file_EPQZkr-rename.right.java'>
+               ./results/merge_file_W4kZQa/merge_file_EPQZkr-rename.right.java
+               <a/>
+               </li>
+               </ul>
+               </td>
+               </tr>
+               <tr>
+               <td>False Positive</td>
+               <td>Keep right changed method</td>
+               <td>
+               <ul>
+               <p>
+               Left deleted method.
+               Right changed method body.
+               </p>
+               <li>
+               s3m result: 
+               <a href='./results/merge_file_WdRNSK/merge_file_WdRNSK-rename.merge.java'>
+               ./results/merge_file_WdRNSK/merge_file_WdRNSK-rename.merge.java
+               </a>
+               </li>
+               <br>
+               <li>
+               BASE:
+               <a href='./results/merge_file_WdRNSK/merge_file_WdRNSK-rename.base.java'>
+               ./results/merge_file_WdRNSK/merge_file_WdRNSK-rename.base.java
+               <a/><br/>
+               LEFT:
+               <a href='./results/merge_file_WdRNSK/merge_file_MFqIYO-rename.left.java'>
+               ./results/merge_file_WdRNSK/merge_file_MFqIYO-rename.left.java
+               <a/><br/>
+               RIGHT:
+               <a href='./results/merge_file_WdRNSK/merge_file_YrjnGt-rename.right.java'>
+               ./results/merge_file_WdRNSK/merge_file_YrjnGt-rename.right.java
+               <a/>
+               </li>
+               </ul>
+               </td>
+               </tr>
+               <tr>
+               <td>False Positive</td>
+               <td>Maintain both methods</td>
+               <td>
+               <ul>
+               <p>
+               Left renamed method and changed body
+               Right changed method body
+               </p>
+               <li>
+               s3m result: 
+               <a href='./results/merge_file_znAsPd/merge_file_znAsPd-rename.merge.java'>
+               ./results/merge_file_znAsPd/merge_file_znAsPd-rename.merge.java
+               </a>
+               </li>
+               <br>
+               <li>
+               BASE:
+               <a href='./results/merge_file_znAsPd/merge_file_znAsPd-rename.base.java'>
+               ./results/merge_file_znAsPd/merge_file_znAsPd-rename.base.java
+               <a/><br/>
+               LEFT:
+               <a href='./results/merge_file_znAsPd/merge_file_pwsXYJ-rename.left.java'>
+               ./results/merge_file_znAsPd/merge_file_pwsXYJ-rename.left.java
+               <a/><br/>
+               RIGHT:
+               <a href='./results/merge_file_znAsPd/merge_file_m0gIe2-rename.right.java'>
+               ./results/merge_file_znAsPd/merge_file_m0gIe2-rename.right.java
+               <a/>
+               </li>
+               </ul>
+               </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </body>
 </html>
