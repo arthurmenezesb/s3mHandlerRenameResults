@@ -1,177 +1,170 @@
 <html>
-<head>
-	<title>AndEngine</title>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+   <head>
+      <title>AndEngine</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <style type="text/css">
-        ul p {
-            font-style: italic;
-        }
-
-        ul li {
-            font-family: monospace;
-        }
-
+         ul p {
+         font-style: italic;
+         }
+         ul li {
+         font-family: monospace;
+         }
       </style>
-</head>
-<body>
-	<nav>
-	    <div class="nav-wrapper">
-	      <a href="s3mHandlerRenameResults/index.html" class="brand-logo">jFSTMerge - Rename Handler Changed</a>
-	    </div>
-	</nav>
-
-	<div class="container">
-	<h3 class="header">AndEngine</h3>
-
-    <h5>Summary</h5>
-    <p>
-        s3m was invoked in 4 rename scenario.
-    </p>
-    <p>
-        X False Positives.
-    </p>
-    <p>
-        Y False Negatives.
-    </p>
-    
-
-
-	<table class="striped">
-        <thead>
-          <tr>
-              <th>-</th>
-              <th>Conflict Type</th>
-              <th>Files</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>False positives added by unstructured merge (1)</td>
-            <td>Method body update</td>
-            <td>
-            	<ul>
-                    <p>
-                            Comment: conflict caused by inclusion of space in call of method. Since s3m ignores spaces, only unstructured merge has reported conflict.
+   </head>
+   <body>
+      <nav>
+         <div class="nav-wrapper">
+            <a href="s3mHandlerRenameResults/index.html" class="brand-logo">jFSTMerge - Rename Handler Changed</a>
+         </div>
+      </nav>
+      <div class="container">
+         <h3 class="header">AndEngine</h3>
+         <h5>Summary</h5>
+         <p>
+            jFSTMerge was invoked in 4 rename scenario.
+         </p>
+         <p>
+            4 False Positives.
+         </p>
+         <p>
+            0 False Negatives.
+         </p>
+         <table class="striped">
+            <thead>
+               <tr>
+                  <th>-</th>
+                  <th>Merge Resolution</th>
+                  <th>Files</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>False Positive</td>
+                  <td>Maintains both Constructors and Methds</td>
+                  <td>
+                     <ul>
+                        <p>
+                           Left/Right renamed and changed body of constructors and methods.
                         </p>
-            		<li>
-            			s3m result:
-            			<a href="./results/merge_file_jCN6Ow/merge_file_jCN6Ow-rename.merge.java">
-            				merge_file_jCN6Ow-rename.merge.java
-            			</a>            		
-            		</li>
-                    <br>
-                    <li>
-                        BASE:
-                        <a href="./results/merge_file_jCN6Ow/merge_file_jCN6Ow-rename.base.java">
-                            merge_file_jCN6Ow-rename.base.java
-                        </a><br/>
-                        LEFT:
-                        <a href="./results/merge_file_jCN6Ow/merge_file_h6Vx5q-rename.left.java">
-                            merge_file_h6Vx5q-rename.left.java
-                        </a><br/>
-                        RIGHT:
-                        <a href="./results/merge_file_jCN6Ow/merge_file_OH5fNi-rename.right.java">
-                            merge_file_OH5fNi-rename.right.java
-                        </a>
-                    </li>
-            	</ul>
-            </td>
-          </tr>
-          <tr>
-            <td>False positives added by s3m (12)</td>
-            <td>method deletion</td>
-            <td>
-            	<ul>
-                    <p>
-                        Comment: conflicts reported possibly due to parser problems in handling with Python comments.
-                    </p>
-            		<li>
-            			[deletion] s3m result (11 conflicts):
-            			<a href="./results/merge_file_jkVW4K/merge_file_jkVW4K-rename.merge.java">
-            				merge_file_jkVW4K-rename.merge.java
-            			</a>
-            		</li>
-                    <li>
-                        BASE:
-                        <a href="./results/merge_file_jkVW4K/merge_file_jkVW4K-rename.base.java">
-                            merge_file_jCN6Ow-rename.base.java
-                        </a><br/>
-                        LEFT:
-                        <a href="./results/merge_file_jkVW4K/merge_file_p06A7j-rename.left.java">
-                            merge_file_h6Vx5q-rename.left.java
-                        </a><br/>
-                        RIGHT:
-                        <a href="./results/merge_file_jkVW4K/merge_file_IaT09C-rename.right.java">
-                            merge_file_OH5fNi-rename.right.java
-                        </a>
-                    </li>
-                    
-                    <hr>
-
-            		<li>
-            			[deletion] s3m result:
-            			<a href="./results/merge_file_V7D2JX/merge_file_V7D2JX-rename.merge.java">
-                            merge_file_V7D2JX-rename.merge.java
-                        </a>
-            		</li>
-                    <li>
-                        BASE:
-                        <a href="./results/merge_file_V7D2JX/merge_file_V7D2JX-rename.base.java">
-                            merge_file_jCN6Ow-rename.base.java
-                        </a><br/>
-                        LEFT:
-                        <a href="./results/merge_file_V7D2JX/merge_file_aFQhOO-rename.left.java">
-                            merge_file_aFQhOO-rename.left.java
-                        </a><br/>
-                        RIGHT:
-                        <a href="./results/merge_file_V7D2JX/merge_file_D32KPB-rename.right.java">
-                            merge_file_D32KPB-rename.right.java
-                        </a>
-                    </li>
-            	</ul>
-            </td>
-          </tr>
-          
-          <tr>
-            <td>False negatives added by s3m (2)</td>
-            <td>Method body update, variable declaration</td>
-            <td>
-            	<ul>
-                    <p>
-                            Comment: conflict caused by inclusion of space in call of method. Since s3m ignores spaces, only unstructured merge has reported conflict.
+                        <li>
+                           s3m result:
+                           <a href="./results/merge_file_jCN6Ow/merge_file_jCN6Ow-rename.merge.java">
+                           merge_file_jCN6Ow-rename.merge.java
+                           </a>
+                        </li>
+                        <br>
+                        <li>
+                           BASE:
+                           <a href="./results/merge_file_jCN6Ow/merge_file_jCN6Ow-rename.base.java">
+                           merge_file_jCN6Ow-rename.base.java
+                           </a>
+                           <br/> LEFT:
+                           <a href="./results/merge_file_jCN6Ow/merge_file_h6Vx5q-rename.left.java">
+                           merge_file_h6Vx5q-rename.left.java
+                           </a>
+                           <br/> RIGHT:
+                           <a href="./results/merge_file_jCN6Ow/merge_file_OH5fNi-rename.right.java">
+                           merge_file_OH5fNi-rename.right.java
+                           </a>
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+               
+                <tr>
+                  <td>False Positive</td>
+                  <td>Maintain renamed attribute</td>
+                  <td>
+                     <ul>
+                        <p>
+                           Left renamed attributes. 
+                           Right removed the same attribute.
                         </p>
-                    <li>
-                        s3m result:
-                        <a href="./results/merge_file_WUbQ47/merge_file_WUbQ47-rename.merge.java">
-                            merge_file_WUbQ47-rename.merge.java
-                        </a>                    
-                    </li>
-                    <br>
-                    <li>
-                        BASE:
-                        <a href="./results/merge_file_WUbQ47/merge_file_WUbQ47-rename.base.java">
-                            merge_file_WUbQ47-rename.base.java
-                        </a><br/>
-                        LEFT:
-                        <a href="./results/merge_file_WUbQ47/merge_file_B4sd4t-rename.left.java">
-                            merge_file_B4sd4t-rename.left.java
-                        </a><br/>
-                        RIGHT:
-                        <a href="./results/merge_file_WUbQ47/merge_file_AScs18-rename.right.java">
-                            merge_file_AScs18-rename.right.java
-                        </a>
-                    </li>
-                </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-	</div>
-</body>
+                        <li>
+                           s3m result:
+                           <a href="./results/merge_file_V7D2JX/merge_file_V7D2JX-rename.merge.java">
+                           merge_file_V7D2JX-rename.merge.java
+                           </a>
+                        </li>
+                        <li>
+                           BASE:
+                           <a href="./results/merge_file_V7D2JX/merge_file_V7D2JX-rename.base.java">
+                           merge_file_jCN6Ow-rename.base.java
+                           </a>
+                           <br/> LEFT:
+                           <a href="./results/merge_file_V7D2JX/merge_file_aFQhOO-rename.left.java">
+                           merge_file_aFQhOO-rename.left.java
+                           </a>
+                           <br/> RIGHT:
+                           <a href="./results/merge_file_V7D2JX/merge_file_D32KPB-rename.right.java">
+                           merge_file_D32KPB-rename.right.java
+                           </a>
+                        </li>
+                     </ul>
+                  </td>
+                </tr>
+               <tr>
+                  <td>False Positive</td>
+                  <td>Maintains both Constructors</td>
+                  <td>
+                     <ul>
+                        <p>
+                           Left added new param to constructor and change constructor body. Right removed and added params to constructor and change constructor body.
+                        </p>
+                        <li>
+                           s3m result:
+                           <a href="./results/merge_file_WUbQ47/merge_file_WUbQ47-rename.merge.java">
+                           merge_file_WUbQ47-rename.merge.java
+                           </a>
+                        </li>
+                        <br>
+                        <li>
+                           BASE:
+                           <a href="./results/merge_file_WUbQ47/merge_file_WUbQ47-rename.base.java">
+                           merge_file_WUbQ47-rename.base.java
+                           </a>
+                           <br/> LEFT:
+                           <a href="./results/merge_file_WUbQ47/merge_file_B4sd4t-rename.left.java">
+                           merge_file_B4sd4t-rename.left.java
+                           </a>
+                           <br/> RIGHT:
+                           <a href="./results/merge_file_WUbQ47/merge_file_AScs18-rename.right.java">
+                           merge_file_AScs18-rename.right.java
+                           </a>
+                        </li>
+                        <hr>
+                        <p>
+                           Left changed constructor body.
+                           Right added new param and changed constructor body.
+                        </p>
+                        <li>
+                           s3m result:
+                           <a href="./results/merge_file_jkVW4K/merge_file_jkVW4K-rename.merge.java">
+                           merge_file_jkVW4K-rename.merge.java
+                           </a>
+                        </li>
+                        <li>
+                           BASE:
+                           <a href="./results/merge_file_jkVW4K/merge_file_jkVW4K-rename.base.java">
+                           merge_file_jCN6Ow-rename.base.java
+                           </a>
+                           <br/> LEFT:
+                           <a href="./results/merge_file_jkVW4K/merge_file_p06A7j-rename.left.java">
+                           merge_file_h6Vx5q-rename.left.java
+                           </a>
+                           <br/> RIGHT:
+                           <a href="./results/merge_file_jkVW4K/merge_file_IaT09C-rename.right.java">
+                           merge_file_OH5fNi-rename.right.java
+                           </a>
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </body>
 </html>
